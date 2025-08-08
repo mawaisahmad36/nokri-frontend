@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- poppins google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- swiper bundle min css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- sb menu css -->
+    <link rel="stylesheet" href="css/sbmenu.css">
+    <!-- pretty check-box css -->
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <!-- range slider css -->
+    <link rel="stylesheet" href="css/rangeslider.min.css">
+    <!-- select 2 css -->
+    <link rel="stylesheet" href="css/select2.css">
+    <!-- my custom css -->
+    <link rel="stylesheet" href="css/my-style.css">
+    <!-- my responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Candidate Detail Page</title>
+</head>
+
+<body class="nk-select-2-change">
+
+    <div class="nk-latest-header without-searchbar sb-header header-shadow viewport-lg nk-white-bg-header">
+        <div class="container">
+            <!-- sb header -->
+            <div class="sb-header-container">
+                <!--Logo-->
+                <div class="logo" data-mobile-logo="imgs/nokri-logo.png" data-sticky-logo="imgs/nokri-logo.png">
+                    <a href="index.html"><img src="imgs/nokri-logo.png" alt=""></a>
+                </div>
+                <!-- Burger menu -->
+                <div class="burger-menu">
+                    <div class="line-menu line-half first-line"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu line-half last-line"></div>
+                </div>
+                <!--Navigation menu-->
+                <nav class="sb-menu menu-caret submenu-top-border submenu-scale">
+                    <ul>
+                        <li class="dropdown_menu">
+                            <a href="#">Home</a>
+                            <ul>
+                                <li><a href="home-elegent.html">Home 1 <span></span></a></li>
+                                <li><a href="home-classic.html">Home 2 <span></span></a></li>
+                                <li><a href="home-creative.html">Home 3 <span></span></a></li>
+                                <li><a href="index.html">Home 4 <span></span></a></li>
+                                <li><a href="../exertio-rtl/index.html">Exertio RTL <span></span></a></li>
+                                <li><a href="project-details.html">Project Details <span></span></a></li>
+                                <li><a href="services-details.html">Services Detail <span></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu-left dropdown_menu">
+                            <a href="#">Search</a>
+                            <ul>
+                                <li class="dropdown_menu">
+                                    <a href="#">Projects</a>
+                                    <ul>
+                                        <li><a href="search-page.html">Search Page <span></span></a></li>
+                                        <li><a href="job-details-page.html">Job Detail Page <span></span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown_menu">
+                                    <a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="search-page-grid-1.html">Search Page Grid 1 <span></span></a></li>
+                                        <li><a href="search-page-list.html">Search Page list <span></span></a></li>
+                                        <li><a href="services-details-page.html">Services Detail Page <span></span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="employer-packages.html">Employer Packages <span></span></a></li>
+                                <li><a href="freelancers-packages.html">Freelancer Packages <span></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown_menu">
+                            <a href="#">Users</a>
+                            <ul>
+                                <li><a href="employer-grid.html">Employer Grids <span></span></a></li>
+                                <li><a href="employer-detail.html">Employer Detail <span></span></a></li>
+                                <li><a href="freelancer-grid.html">Freelancer Grids <span></span></a></li>
+                                <li><a href="freelancer-list.html">Freelancer List <span></span></a></li>
+                                <li><a href="freelancer-detail.html">Freelancer Detail <span></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown_menu">
+                            <a href="#">Pages</a>
+                            <ul>
+                                <li><a href="about-us.html">About Us <span></span></a></li>
+                                <li><a href="blog-page.html">Blog <span></span></a></li>
+                                <li><a href="blog-detail.html">Blog Detail <span></span></a></li>
+                                <li><a href="404-page.html">404 Page <span></span></a></li>
+                                <li><a href="contact-us.html">Contact Us <span></span></a></li>
+                            </ul>
+                        </li>
+                        <li class="n-notifica">
+                            <div>
+                                <a href="#" class="n-login-header">
+                                    <span class="iconify" data-icon="lucide:bell-ring"></span>
+                                    <span class="active"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="login-toggle">
+                            <div>
+                                <a href="#" class="n-login-header">
+                                    <span class="iconify" data-icon="bx:user"></span>
+                                </a>
+                            </div>
+                            <div class="sign-up-box">
+                                <p class="txt">Sign in or register to sync your favorite jobs across devices</p>
+                                <a class="sign-in latest-theme-btn" href="www.facebook.com">Sign In</a>
+                                <a class="create-account" href="#">Create new account</a>
+                            </div>
+                        </li>
+                        <li class="fr-list">
+                            <a href="sign-in.html" class="btn btn-theme"><span class="iconify"
+                                    data-icon="ant-design:plus-outlined"></span>Add Post</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- nk-menu-breadcrumb-start -->
+    <section class="nk-menu-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Candidate Detail</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nk-menu-breadcrumb-end -->
+
+    <!-- nk-hero-detail-banner-start -->
+    <section class="nk-hero-detail-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"></div>
+            </div>
+        </div>
+    </section>
+    <!-- nk-hero-detail-banner-end -->
+
+    <!-- nk-candidate-detail-section-start -->
+    <section class="nk-candidate-detail-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="profile-main-box">
+                        <div class="left-cont">
+                            <div class="prf-img">
+                                <img src="imgs/cand-prf-img.png" alt="candidate-profile-img">
+                            </div>
+                            <div class="prf-dtl">
+                                <span><span class="iconify" data-icon="bxs:star"></span>4.5 Review</span>
+                                <a href="#"><h5>Ameer Hamza</h5></a>
+                                <small>React JS</small>
+                            </div>
+                        </div>
+                        <div class="right-cont">
+                            <span class="ftrd-tag">Featured</span>
+                            <div class="prf-favourite">
+                                <a href="#" class="fav-btn"><span class="iconify" data-icon="bi:heart"></span></a>
+                                <a href="#" class="prf-btn"><span class="iconify" data-icon="akar-icons:cloud-download"></span>Generate Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cand-detail-container">
+                        <h3 class="topic-heading">Candidate Detail:</h3>
+                        <div class="personal-dtl-box">
+                            <ul>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="bi:calendar-date"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Date of birth:</span>
+                                            <h6>October 1, 2018</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="bi:calendar-date"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Member Since:</span>
+                                            <h6>September 14, 2018</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="ph:gender-male"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Gender:</span>
+                                            <h6>Male</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="bi:envelope-open"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Salary:</span>
+                                            <h6>Rupees 1000/Monthly</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="ep:map-location"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Location:</span>
+                                            <h6>Germany <a href="#">Get Direction</a></h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="description">
+                            <h3 class="topic-heading">About Glixen Technologies</h3>
+                            <p class="txt">Excings Motors has a wide selection of high quality, pre-owned (Used) Japanese vehicles in stock at all times, including Sedan cars, Hatchback cars, Sports cars, Jeeps, Commercial Van, Pick-ups, Buses, Trucks etc. all at competitive prices. We believe in Good Quality, Low Prices (with lowest profit) and Quick Shipment. Our staff is highly qualified, well trained and give special attention towards quality</p>
+                            <p class="txt">Commercial Van, Pick-ups, Buses, Trucks etc. all at competitive prices. We believe in Good Quality, Low Prices (with lowest profit) and Quick Shipment. Our staff is highly qualified, well trained and give special attention towards quality rained and give special attention towards quality.</p>
+                        </div>
+                        <div class="custom-field-box">
+                            <h3 class="topic-heading">Custom Fields:</h3>
+                            <ul>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="charm:tick-double"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Birth City</span>
+                                            <h6>Washington</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="charm:tick-double"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Marital status</span>
+                                            <h6>Single</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="charm:tick-double"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Searching For Job</span>
+                                            <h6>Yes</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="charm:tick-double"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Joining date</span>
+                                            <h6>11/30/2022</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-box">
+                                        <div class="left-icon">
+                                            <span class="iconify" data-icon="charm:tick-double"></span>
+                                        </div>
+                                        <div class="meta-box">
+                                            <span>Family Members</span>
+                                            <h6>4</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skill-tool-box">
+                            <h3 class="topic-heading">Skills and tools</h3>
+                            <div class="prg-bar-main-box">
+                                <div class="prg-sub-box">
+                                    <ul>
+                                        <li>
+                                            <div class="prg-dtl-box">
+                                                <h6>Commitment</h6>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span>85%</span></div>
+                                                </div>   
+                                            </div>                                             
+                                        </li>
+                                        <li>
+                                            <div class="prg-dtl-box">
+                                                <h6>Team Management</h6>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"><span>68%</span></div>
+                                                </div>   
+                                            </div>                                              
+                                        </li>
+                                        <li>
+                                            <div class="prg-dtl-box">
+                                                <h6>Commitment</h6>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"><span>91%</span></div>
+                                                </div>   
+                                            </div>                                              
+                                        </li>
+                                        <li>
+                                            <div class="prg-dtl-box">
+                                                <h6>Flexibility</h6>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"><span>76%</span></div>
+                                                </div>   
+                                            </div>                                              
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="prg-sub-box">
+                                    <ul>
+                                        <li>
+                                            <div class="prg-dtl-box">
+                                                <h6>SEO</h6>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span>100%</span></div>
+                                                </div>   
+                                            </div>                                               
+                                        </li>
+                                        <li>
+                                            <div class="prg-dtl-box">
+                                                <h6>Development</h6>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 49%" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"><span>49%</span></div>
+                                                </div>   
+                                            </div>                                               
+                                        </li>
+                                        <li>
+                                            <div class="prg-dtl-box">
+                                                <h6>SEO</h6>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span>65%</span></div>
+                                                </div>   
+                                            </div>                                               
+                                        </li>
+                                        <li>
+                                            <div class="prg-dtl-box">
+                                                <h6>Development</h6>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 49%" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"><span>49%</span></div>
+                                                </div>  
+                                            </div>                                           
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-detail-box">
+                            <h3 class="topic-heading">Education</h3>
+                            <div class="dtl-container-box">
+                                <div class="title-box">
+                                    <div class="left-side">
+                                        <div class="icon-outer">
+                                            <span class="iconify" data-icon="cil:education"></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>December 2018  - January 2019</span>
+                                        <h4 class="heading">Bachelor of Business Administration</h4>
+                                    </div>
+                                </div>
+                                <p class="txt">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laor eet.Aenean leo ligula, porttitor eu, consequat vitae</p>
+                            </div>
+                            <div class="dtl-container-box">
+                                <div class="title-box">
+                                    <div class="left-side">
+                                        <div class="icon-outer">
+                                            <span class="iconify" data-icon="cil:education"></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>December 2018  - January 2019</span>
+                                        <h4 class="heading">Software Engineering</h4>
+                                    </div>
+                                </div>
+                                <p class="txt">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laor eet.Aenean leo ligula, porttitor eu, consequat vitae</p>
+                            </div>
+                            <div class="dtl-container-box">
+                                <div class="title-box">
+                                    <div class="left-side">
+                                        <div class="icon-outer">
+                                            <span class="iconify" data-icon="cil:education"></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>December 2018  - January 2019</span>
+                                        <h4 class="heading">MS Software Engineering</h4>
+                                    </div>
+                                </div>
+                                <p class="txt">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laor eet.Aenean leo ligula, porttitor eu, consequat vitae</p>
+                            </div>
+                        </div>
+                        <div class="education-detail-box work-detail-box">
+                            <h3 class="topic-heading">Work Experience</h3>
+                            <div class="dtl-container-box">
+                                <div class="title-box">
+                                    <div class="left-side">
+                                        <div class="icon-outer">
+                                            <span class="iconify" data-icon="gala:book"></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>February 2019 - Currently working</span>
+                                        <h4 class="heading">Bachelor of Business Administration</h4>
+                                    </div>
+                                </div>
+                                <p class="txt">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laor eet.Aenean leo ligula, porttitor eu, consequat vitae</p>
+                            </div>
+                            <div class="dtl-container-box">
+                                <div class="title-box">
+                                    <div class="left-side">
+                                        <div class="icon-outer">
+                                            <span class="iconify" data-icon="gala:book"></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>February 2013 -June 2015</span>
+                                        <h4 class="heading">Data Entry Clerk</h4>
+                                    </div>
+                                </div>
+                                <p class="txt">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laor eet.Aenean leo ligula, porttitor eu, consequat vitae</p>
+                            </div>
+                            <div class="dtl-container-box">
+                                <div class="title-box">
+                                    <div class="left-side">
+                                        <div class="icon-outer">
+                                            <span class="iconify" data-icon="gala:book"></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>March 2011 -March 2011</span>
+                                        <h4 class="heading">Internet searcher</h4>
+                                    </div>
+                                </div>
+                                <p class="txt">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laor eet.Aenean leo ligula, porttitor eu, consequat vitae</p>
+                            </div>
+                        </div>
+                        <div class="education-detail-box award-certificate">
+                            <h3 class="topic-heading">Awards and Certificates</h3>
+                            <div class="dtl-container-box">
+                                <div class="title-box">
+                                    <div class="left-side">
+                                        <div class="icon-outer">
+                                            <span class="iconify" data-icon="fluent:certificate-24-regular"></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>2018 - 2019</span>
+                                        <h4 class="heading">Portfolio Contest Scholarship</h4>
+                                    </div>
+                                </div>
+                                <p class="txt">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laor eet.Aenean leo ligula, porttitor eu, consequat vitae</p>
+                            </div>
+                            <div class="dtl-container-box">
+                                <div class="title-box">
+                                    <div class="left-side">
+                                        <div class="icon-outer">
+                                            <span class="iconify" data-icon="fluent:certificate-24-regular"></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <span>2019-2020</span>
+                                        <h4 class="heading">Learning and Performance</h4>
+                                    </div>
+                                </div>
+                                <p class="txt">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laor eet.Aenean leo ligula, porttitor eu, consequat vitae</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-box-main">
+                        <h3 class="topic-heading">Contact Ameer Hamza</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name">
+                            <input type="email" placeholder="Email Address">
+                            <input type="text" placeholder="Subject">
+                            <textarea placeholder="Enter Your Message"></textarea>
+                            <a class="send-btn latest-theme-btn" href="#">Send Message</a>
+                        </div>
+                    </div>
+                    <div class="social-links-box">
+                        <ul>
+                            <li>
+                                <span>Social Media</span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-outer">
+                                        <span class="iconify" data-icon="bxl:facebook"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-outer">
+                                        <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-outer">
+                                        <span class="iconify" data-icon="bxl:instagram-alt"></span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="icon-outer">
+                                        <span class="iconify" data-icon="fe:youtube"></span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="emp-video-box">
+                        <h3 class="topic-heading">Employer Video</h3>
+                        <div class="video-cont">
+                            <img src="imgs/emp-video-img.jpg" alt="emp-video">
+                            <a href="#"><span class="iconify" data-icon="fe:youtube"></span></a>
+                        </div>
+                    </div>
+                    <div class="emp-gallery-box">
+                        <h3 class="topic-heading">Employer Gallery</h3>
+                        <ul>
+                            <li>
+                                <div class="img-box">
+                                    <img src="imgs/emp-gallery-1.png" alt="emp-gallery-img">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="imgs/emp-gallery-2.png" alt="emp-gallery-img">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="imgs/emp-gallery-3.png" alt="emp-gallery-img">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="imgs/emp-gallery-4.png" alt="emp-gallery-img">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="emp-schedule-box">
+                        <div class="top-meta">
+                            <h3 class="title">Scheduled Hours</h3>
+                            <span>Listing Timezone: <small>America/New_York</small></span>
+                        </div>
+                        <div class="schedule-list">
+                            <ul>
+                                <li>
+                                    <div class="time-box">
+                                        <span>Monday:</span>
+                                        <small>10:00 Am - 10:00 Pm</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time-box">
+                                        <span>Tuesday:</span>
+                                        <small>10:00 Am - 10:00 Pm</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time-box">
+                                        <span>Wednesday:</span>
+                                        <small>10:00 Am - 10:00 Pm</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time-box">
+                                        <span>Thursday:</span>
+                                        <small>10:00 Am - 10:00 Pm</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time-box">
+                                        <span>Friday:</span>
+                                        <small>10:00 Am - 10:00 Pm</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time-box">
+                                        <span>Saturday:</span>
+                                        <small>10:00 Am - 10:00 Pm</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="time-box">
+                                        <span>Sunday:</span>
+                                        <small>Closed</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="professional-skill-box">
+                        <h3 class="topic-heading">Professional Skills</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Adobe</a>
+                            </li>
+                            <li>
+                                <a href="#">Figma</a>
+                            </li>
+                            <li>
+                                <a href="#">Illustrator</a>
+                            </li>
+                            <li>
+                                <a href="#">SEO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nk-candidate-detail-section-end -->
+
+    <!-- get-touch-section-start -->
+    <section class="get-touch-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="trending-keyword">
+                        <div class="main-theme-heading">
+                            <h2 class="main-heading"><span class="iconify"
+                                    data-icon="bx:dots-vertical-rounded"></span>Get in Touch</h2>
+                            <p class="txt">per libero, sit amet adipiscing sem Nam quam nunc ipsum.</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Your Email">
+                            <button class="send-btn"><span class="iconify" data-icon="tabler:send"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- get-touch-section-end -->
+
+    <!-- nk-latest-footer-start -->
+    <section class="nk-latest-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="nk-abt-dtl-box">
+                        <div class="logo">
+                            <a href="#"><img src="imgs/ftr-nokri-logo.png" alt="ftr-logo"></a>
+                        </div>
+                        <p class="txt">quam sem per libero, sit amet adipiscing sem Nam quam nunc ipsum rhoncus.</p>
+                        <ul>
+                            <li>
+                                <div class="icon-outer">
+                                    <span class="iconify" data-icon="bxl:facebook"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-outer">
+                                    <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-outer">
+                                    <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-outer">
+                                    <span class="iconify" data-icon="akar-icons:youtube-fill"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="call-us-box">
+                            <div class="icon">
+                                <span class="iconify" data-icon="bx:phone-call"></span>
+                            </div>
+                            <div class="meta">
+                                <span>Call Us</span>
+                                <a href="#">+92-1243-4567</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="extra-links-box">
+                        <h3 class="title">For Candidates</h3>
+                        <ul>
+                            <li>
+                                <a href="#">My Bookmarks</a>
+                            </li>
+                            <li>
+                                <a href="#">Job Alerts</a>
+                            </li>
+                            <li>
+                                <a href="#">Candidate Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Browse Candidates</a>
+                            </li>
+                            <li>
+                                <a href="#">Browse Jobs</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="extra-links-box">
+                        <h3 class="title">For Employers</h3>
+                        <ul>
+                            <li>
+                                <a href="#">All Employers</a>
+                            </li>
+                            <li>
+                                <a href="#">Job Alerts</a>
+                            </li>
+                            <li>
+                                <a href="#">Employer Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Browse Employer </a>
+                            </li>
+                            <li>
+                                <a href="#">Browse Jobs</a>
+                            </li>
+                            <li>
+                                <a href="#">Job Packages</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="extra-links-box">
+                        <h3 class="title">Helpful Resources</h3>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Map</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Center</a>
+                            </li>
+                            <li>
+                                <a href="#">Security Center</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessibility Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nk-latest-footer-end -->
+
+    <!-- copyright-section-start -->
+    <div class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="cont-box">
+                        <p class="txt">Copyright 2022 © Theme Created By <a href="#">Scriptsbundle</a> All Rights
+                            Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright-section-end -->
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jquery js -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- swiper bundle min js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- sb menu js -->
+    <script src="js/sbmenu.js"></script>
+    <!-- select 2 js -->
+    <script src="js/select2.full.min.js"></script>
+    <!-- Nice scroll js -->
+    <script type="text/javascript" src="js/nicescroll.min.js"></script>
+    <!-- range slider js -->
+    <script src="js/rangeslider.min.js"></script>
+    <!-- iconify icon -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- my custom js -->
+    <script src="js/my-custom.js"></script>
+
+</body>
+
+</html>
